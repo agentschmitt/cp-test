@@ -13,11 +13,12 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         mkdir "./dist"
-        mkdir "./dist/core"
-        cp -r "./test" "./dist/core"
+        cp -r "./test" "./dist/test"
+        ls -l "./dist"
+        ls -l "./dist/test"        
     - run: |
+        mkdir "./dist/test2"
+        cp -R "./dist/test/*" "./dist/test2/"
         ls -l "./dist"
-        ls -l "./dist/core"
-        cp -R "./dist/core/*" "./dist/customer/"
-        ls -l "./dist"
+        ls -l "./dist/test2"                
 
