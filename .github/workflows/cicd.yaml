@@ -15,8 +15,9 @@ jobs:
         mkdir "./dist"
         mkdir "./dist/core"
         cp -r "./test" "./dist/core"
+    - run: |
         ls -l "./dist"
-    - run: |        
+        ls -l "./dist/core"
         cp -R "./dist/core/*" "./dist/customer/"
         ls -l "./dist"
 
