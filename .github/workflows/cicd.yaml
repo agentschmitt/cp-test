@@ -18,7 +18,7 @@ jobs:
         ls -l "./dist/test"        
     - run: |
         mkdir "./dist/test2"
-        cp -rv "./dist/test/" "./dist/test2/"
+        cp -rv "./dist/test/*" "./dist/test2/"
         ls -l "./dist"
         ls -l "./dist/test2"                
 
