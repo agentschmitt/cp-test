@@ -17,6 +17,6 @@ jobs:
         cp -r "./test" "./dist/core"
         ls -l "./dist"
     - run: |        
-        cp -r "./dist/core/*" "./dist/customer/"
+        cp -R "./dist/core/*" "./dist/customer/"
         ls -l "./dist"
 
