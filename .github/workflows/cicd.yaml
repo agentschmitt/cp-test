@@ -14,6 +14,6 @@ jobs:
     - run: cp --help
     - run: |
         mkdir "./dist"
-        cp -a "test/." "dist"
+        cp -r "test/." "dist"
         ls -l "./dist"
 
