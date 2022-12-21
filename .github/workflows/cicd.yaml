@@ -17,3 +17,9 @@ jobs:
         cp -r "test/." "dist"
         ls -l "./dist"
 
+  test:
+    name: test
+    runs-on: windows-latest
+    steps:
+      - run: echo "$env:LOCALAPPDATA"
+      - run: echo "electron-builder=$env:LOCALAPPDATA\electron-builder\Cache"
